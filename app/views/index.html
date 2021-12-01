@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Css/Style.css">
+        <title>PROYECTO FINAL</title>
+    </head>
+    <body>
+        <div class="Registro">
+            <div class="Producto">
+                <form method="post" action="http://localhost:1340/api/personas">
+                    <fieldset>
+                        <legend>Producto</legend>
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre" class="Caja"><br>
+                            <label for="edad">Cantidad:</label><br>
+                            <input type="text" id="cantidad" name="cantidad" class="Caja"><br>
+                            <label>Precio</label><br>
+                            <input type="text" id="precio" name="precio" class="Caja"><br><br>
+                            <input id="btnAdd" type="button" value="Enviar" class="button">
+                            <input id="btnListar" type="button" value="Listar" class="button">
+                        
+                    </fieldset>
+                </form>
+            </div>
+            <div id="resultados" class="Resultados">Resultados</div>
+            <div class="Seleccion">
+                <input type="button" name="carrito" id="btnCarrito" value="Carrito" class="button">
+                <input type="button" name="Total" id="btnTotal" value="Total" class="button"><br><br>
+                <input type="number" id="cant" class="Caja"><br>
+                <select name="Seleccion" id="Seleccion">Productos</select>
+            </div>
+            <div class="Ventas">
+                <form action="">
+                    <fieldset>
+                        <legend>Ventas</legend>
+                            
+                            
+                            <label>Venta Total<br><input type="text" id="venta" name="venta" class="Caja"></label><br>
+                            <label>IVA(16%)<br><input type="text" id="iva" name="iva" class="Caja"></label><br>
+                            <label>Monto total<br><input type="text" id="monto" name="monto" class="Caja"></label><br>
+                            <label>RFC<br><input type="text" id="rfc" name="rfc" class="Caja"></label><br>
+                            <label>Fecha<br><input type="date" id="fecha" name="fecha" class="Caja"></label><br>
+                            <input id="btnFactura" type="button" value="Factura" class="button">
+                    </fieldset>
+                </form>
+                </div>
+        </div>    
+        
+        <script src="Js/app.js"></script>       
+    </body>
+    </html>
